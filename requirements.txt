@@ -1,0 +1,7 @@
+Flask
+openai
+langchain
+langchain_community
+langchain_openai
+unstructured[pdf]
+chromadb
