@@ -16,11 +16,7 @@ COPY . /usr/src/app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 5000 available to the world outside this container
-EXPOSE 5000
+EXPOSE 8080
 
-# Define environment variable
-ENV NAME World
-
-# Define the command to run the app
-CMD ["flask", "run", "--host=0.0.0.0"]
+# Start gunicorn with app:app, where the left `app` is the module name (app.py) and the right `app` is the Flask application instance within that module
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]

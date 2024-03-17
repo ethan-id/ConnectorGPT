@@ -5,3 +5,4 @@ persist/
 .DS_Store
 .chroma/
 .env
+.notes

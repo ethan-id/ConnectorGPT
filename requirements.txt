@@ -6,3 +6,4 @@ langchain_openai
 unstructured[pdf]
 chromadb
 python-dotenv
+gunicorn

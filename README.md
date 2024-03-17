@@ -20,6 +20,17 @@ docker build -t image-name .
 docker run -p 5000:5000 image-name
 ```
 
+### Docker Deployment
+```
+docker tag local_tag google-cloud-repo-url/local_tag:latest
+docker push google-cloud-repo-url/local_tag:latest
+```
+
+If the revision is failing to start from something like an exec format error, you may have to build with this command:
+```
+docker build --platform linux/amd64 -t image-name .
+```
+
 ### Sending Requests to the Flask API:
 ```
 curl -X POST http://localhost:5000/query -H "Content-Type: application/json" -d '{"question":"Can you give me a summary of all of the data? Not just the price history", "chat_history": []}'
