@@ -1,6 +1,6 @@
 # GPT Connector
 
-This is a Flask API that let's you programmatically use ChatGPT on your own data.
+GPT Connector is a Flask API that let's you programmatically use ChatGPT on your own data.
 
 It has been containerized with Docker, and deployed to Google Cloud Run for usage in my other projects, specifically [BizGlimpse](https://github.com/ethan-id/BizGlimpse)
 
