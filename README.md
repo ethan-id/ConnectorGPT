@@ -1,4 +1,4 @@
-# chatgpt-retrieval
+# GPT Connector
 
 This is a Flask API that let's you programmatically use ChatGPT on your own data.
 
