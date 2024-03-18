@@ -6,7 +6,7 @@ It has been containerized with Docker, and deployed to Google Cloud Run for usag
 
 ## Features
 
-* Place your own data into `data/data.txt`, so that it is built into the image and the chatbot will constantly be aware of it. 
+* Place your own data into `data/data.txt`, for it to be build into the Docker image and the chatbot will constantly be aware of it. 
 * Send POST requests to the API with an `additional_data` member of the body, which the chatbot will be made aware of.
 
 ## Local Installation
